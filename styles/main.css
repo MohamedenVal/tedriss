@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 20vh;
+    background: url();
+}
+
+nav{
+    width: 15%;
+    height: 80vh;
+    overflow: hidden;
+    background-color: rgb(54, 54, 54);
+}
+
+nav li a{
+    font-size: large;
+    text-decoration: none;
+    display: block;
+    padding: 16px 32px;
+    color: white;
+    border-bottom: 2px solid white;
+}
