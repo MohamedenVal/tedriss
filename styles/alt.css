@@ -8,36 +8,47 @@ body {
     background: url(../images/xps-dpbXgTh0Lac-unsplash\ \(1\).jpg) no-repeat fixed;
     direction: rtl;
     /* position: absolute; */
+    font-family: 'Mizra', cursive;
 }
 
 header{
-    background: #ccc;
+    background: url(../images/xps-dpbXgTh0Lac-unsplash\ \(1\).jpg) no-repeat;
+    /* background: #ccc; */
     overflow: hidden;
-    height: 20vh;
-    text-align: center;
-    padding: 10px 60px;
-    color: #fafafa;
+    height: 30vh;
+    text-align: left;
+    padding: 30px;
+    color: #050505;
 }
 
+.navbar{
+    background-color: #333;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 nav{
     display: flex;
-    background: #333;
+    /* background: #333; */
     position: sticky;
     top: 0;
-    /* flex-direction: row-reverse; */
-    /* float:right; */
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    /* flex-direction: row-reverse; */
+    text-align: center;
+    justify-content: space-between;
 }
+
 nav li a{
+    font-size: 18px;
     color: white;
     text-decoration: none;
     padding: 14px 20px;
-    text-align: center;
+    
 }
 
 main{
@@ -47,8 +58,9 @@ main{
 
 .sideBar{
     flex: 10%;
+    font-size: 18px;
     /* height: 100vh; */
-    background-color: #95e792;
+    background-color: #b8b8b8;
     border-left: 2px solid #ffffff;
 }
 .sideBar ul li{
@@ -56,14 +68,19 @@ main{
     display: flex;
     flex-direction: column;
 }
-.sideBar ul {
+.sideBar ul, .sideBar li, .sideBar {
     padding: 0;
+    margin: 0;
 }
 .sideBar ul li a {
     text-decoration: none;
     color: white;
-    padding: 16px 8px;
+    padding: 8px 16px;
     border-bottom: 1px solid white;
+}
+.sideBar ul li a:hover {
+    background-color: #333;
+    font-size: large;
 }
 
 aside{
@@ -72,12 +89,19 @@ aside{
     padding: 20px;
 }
 article{
-    flex:60%;
+    flex: 60%;
     background-color: #f1f1f1;
-    padding: 20px
+    padding: 20px;
 }
 
+.after{
+    height: 400px;
+}
 
 footer{
-    padding-top: 2500px;
-}
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    background-color: #333;
+    /* padding-top: 2500px;
+} */
