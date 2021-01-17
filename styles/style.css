@@ -3,6 +3,7 @@
 }
 
 body {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   background: url(../images/xps-dpbXgTh0Lac-unsplash\\(1\).jpg) no-repeat fixed;
@@ -48,6 +49,54 @@ nav li a {
   color: white;
   text-decoration: none;
   padding: 14px 20px;
+=======
+    margin: 0;
+    padding: 0;
+    background: url(../images/xps-dpbXgTh0Lac-unsplash\ \(1\).jpg) no-repeat fixed;
+    direction: rtl;
+    /* position: absolute; */
+    font-family: 'Mizra', cursive;
+}
+
+header{
+    background: url(../images/xps-dpbXgTh0Lac-unsplash\ \(1\).jpg) no-repeat;
+    /* background: #ccc; */
+    overflow: hidden;
+    height: 30vh;
+    text-align: left;
+    padding: 30px;
+    color: #050505;
+}
+
+.navbar{
+    background-color: #333;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    /* background: #333; */
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    
+>>>>>>> 2c8e675440a1a5726575de98e592b128df7a4a07
 }
 
 main {
@@ -55,18 +104,28 @@ main {
   /* flex-wrap: wrap; */
 }
 
+<<<<<<< HEAD
 .sideBar {
   flex: 10%;
   font-size: 18px;
   /* height: 100vh; */
   background-color: #95e792;
   border-left: 2px solid #ffffff;
+=======
+.sideBar{
+    flex: 10%;
+    font-size: 18px;
+    /* height: 100vh; */
+    background-color: #b8b8b8;
+    border-left: 2px solid #ffffff;
+>>>>>>> 2c8e675440a1a5726575de98e592b128df7a4a07
 }
 .sideBar ul li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 .sideBar ul {
   padding: 0;
 }
@@ -75,6 +134,21 @@ main {
   color: white;
   padding: 16px 8px;
   border-bottom: 1px solid white;
+=======
+.sideBar ul, .sideBar li, .sideBar {
+    padding: 0;
+    margin: 0;
+}
+.sideBar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-bottom: 1px solid white;
+>>>>>>> 2c8e675440a1a5726575de98e592b128df7a4a07
+}
+.sideBar ul li a:hover {
+    background-color: #333;
+    font-size: large;
 }
 
 aside {
@@ -82,6 +156,7 @@ aside {
   background-color: #ffffff;
   padding: 20px;
 }
+<<<<<<< HEAD
 article {
   flex: 60%;
   background-color: #f1f1f1;
@@ -91,3 +166,22 @@ article {
 footer {
   padding-top: 2500px;
 }
+=======
+article{
+    flex: 60%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.after{
+    height: 400px;
+}
+
+footer{
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    background-color: #333;
+    /* padding-top: 2500px;
+} */
+>>>>>>> 2c8e675440a1a5726575de98e592b128df7a4a07
