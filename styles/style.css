@@ -142,10 +142,52 @@ article {
   padding: 20px;
 }
 
-footer {
+/* footer {
   padding-top: 2500px;
-}
+} */
 
 /* .after {
   height: 400px;
 } */
+section {
+  /* transition: all 1s ease; */
+}
+.circle-content {
+  margin: 10px 50px;
+  padding: 10px;
+  width: 300px;
+  /* float: right; */
+  border-radius: 300px;
+  border: 1px solid #333;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #c877e0, rgb(133, 112, 211));
+  cursor: pointer;
+  /* transform: translateY(200px);
+  transition: all 1s ease; */
+}
+
+.hcj-content {
+  display: none;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(120deg, #c877e0, rgb(133, 112, 211));
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  /* transition: all 0.5s ease; */
+}
+
+.appear {
+  /* display: block; */
+  opacity: 1;
+  transform: translateX(100px) translateY(260px);
+  transition: all 1s ease;
+}
