@@ -26,32 +26,10 @@ header {
   margin: 0 auto;
 }
 
-nav {
-  display: flex;
-  background: #333;
-  position: sticky;
-  top: 0;
-  align-items: center;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  /* flex-direction: row-reverse; */
-}
-nav li a {
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px;
-}
-
 header {
   /* background: #ccc; */
   overflow: hidden;
-  height: 30vh;
+  height: 20vh;
   text-align: left;
   padding: 30px;
   color: #050505;
@@ -62,7 +40,7 @@ header {
 }
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0;
 }
 nav {
   display: flex;
@@ -92,21 +70,24 @@ main {
 }
 
 .sideBar {
-  flex: 10%;
-  font-size: 18px;
-  /* height: 100vh; */
-  background-color: #95e792;
+  padding: 10px;
+  flex: 20%;
+  /* font-size: 14px; */
+  height: 100vh;
+  background-color: #c9dac8;
   border-left: 2px solid #ffffff;
 }
-.sideBar ul li {
+
+.sideBar form {
+  margin: 20px;
+}
+/* .sideBar ul li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-}
-.sideBar ul {
-  padding: 0;
-}
-.sideBar ul li a {
+} */
+
+/* .sideBar ul li a {
   text-decoration: none;
   color: white;
   padding: 16px 8px;
@@ -119,19 +100,14 @@ main {
   padding: 0;
   margin: 0;
 }
-.sideBar ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 16px;
-  border-bottom: 1px solid white;
-}
+
 .sideBar ul li a:hover {
   background-color: #333;
   font-size: large;
-}
+} */
 
 aside {
-  flex: 30%;
+  flex: 20%;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -149,9 +125,11 @@ article {
 /* .after {
   height: 400px;
 } */
-/* section {
-  transition: all 1s ease;
-} */
+section {
+  display: flex;
+  max-width: 1200px;
+  min-height: 200px;
+}
 .circle-content {
   margin: 10px 50px;
   padding: 10px;
@@ -169,7 +147,7 @@ article {
 }
 
 .hcj-content {
-  display: none;
+  z-index: -1;
   width: 400px;
   margin: 10px;
   padding: 10px;
@@ -188,6 +166,26 @@ article {
 .appear {
   /* display: block; */
   opacity: 1;
-  transform: translateX(100px) translateY(260px);
+  transform: translateX(100px) translateY(300px);
   transition: all 1s ease;
+}
+
+.colum {
+  flex: 20%;
+}
+
+/* code for hidden part of the first parargraphe */
+
+.hidden-part {
+  display: none;
+}
+.show {
+  display: block;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(60deg, #4e90bd, #cf3db7) no-repeat;
+  }
 }
