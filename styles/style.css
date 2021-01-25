@@ -10,10 +10,10 @@ body {
 
 header {
   background: url(../images/backgourdImage.jpg);
-  overflow: hidden;
-  height: 30vh;
+  /* overflow: hidden; */
+  height: 50px;
   text-align: left;
-  padding: 30px;
+  padding: 20px;
   color: #050505;
 }
 
@@ -23,17 +23,17 @@ header {
 
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
-header {
-  /* background: #ccc; */
+/* header {
+  background: #ccc;
   overflow: hidden;
   height: 20vh;
   text-align: left;
   padding: 30px;
   color: #050505;
-}
+} */
 
 .navbar {
   background-color: #333;
@@ -65,21 +65,23 @@ nav li a {
 }
 
 main {
+  /* width: 100px; */
   display: flex;
   /* flex-wrap: wrap; */
+  /* flex: 1; */
 }
 
 .sideBar {
   padding: 10px;
-  flex: 20%;
+  flex: 1;
   /* font-size: 14px; */
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #c9dac8;
   border-left: 2px solid #ffffff;
 }
 
 .sideBar form {
-  margin: 20px;
+  margin: 10px;
 }
 /* .sideBar ul li {
   list-style-type: none;
@@ -107,31 +109,43 @@ main {
 } */
 
 aside {
-  flex: 20%;
+  flex: 1;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 10px;
 }
 
 article {
-  flex: 60%;
+  flex: 5;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 10px;
 }
 
-/* footer {
-  padding-top: 2500px;
-} */
+section {
+  padding: 10px;
+  flex: 1;
+  /* font-size: 14px; */
+  /* height: 100vh; */
+  background-color: #c9dac8;
+  border-left: 2px solid #ffffff;
+}
+footer {
+  margin: 0;
+  /* padding-top: 100px; */
+  justify-content: center;
+  text-align: center;
+  /* background-color: #c9dac8; */
+}
 
 /* .after {
   height: 400px;
 } */
-section {
+/* section {
   display: flex;
-  max-width: 1200px;
+  max-width: 1000px;
   min-height: 200px;
-}
+} */
 .circle-content {
-  margin: 10px 50px;
+  /* margin: 10px 50px; */
   padding: 10px;
   width: 300px;
   /* float: right; */
@@ -149,9 +163,9 @@ section {
 .hcj-content {
   z-index: -1;
   width: 400px;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
-  background: linear-gradient(120deg, #c877e0, rgb(133, 112, 211));
+  background: linear-gradient(120deg, #c877e0, #8570d3);
   border-radius: 50px;
   overflow: hidden;
   text-align: center;
@@ -172,6 +186,7 @@ section {
 
 .colum {
   flex: 20%;
+  z-index: 0;
 }
 
 /* code for hidden part of the first parargraphe */
@@ -181,11 +196,15 @@ section {
 }
 .show {
   display: block;
-  z-index: 0;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 600px) {
   body {
-    background: linear-gradient(60deg, #4e90bd, #cf3db7) no-repeat;
+    background-image: linear-gradient(#4e90bd, #cf3db7);
+    /* max-width: 600px; */
+  }
+  main {
+    display: block;
   }
 }
