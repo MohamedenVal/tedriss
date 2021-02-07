@@ -1,16 +1,16 @@
+/* inialiwing the default values and setting the global state of the page */
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: url(../images/backgourdImage.jpg) no-repeat fixed;
   direction: rtl;
-  /* position: absolute; */
   font-family: "Mizra", cursive;
 }
 
 header {
   background: url(../images/backgourdImage.jpg);
-  /* overflow: hidden; */
   height: 50px;
   text-align: left;
   padding: 20px;
@@ -23,17 +23,7 @@ header {
 
 .container {
   max-width: 1100px;
-  /* margin: 0 auto; */
 }
-
-/* header {
-  background: #ccc;
-  overflow: hidden;
-  height: 20vh;
-  text-align: left;
-  padding: 30px;
-  color: #050505;
-} */
 
 .navbar {
   background-color: #333;
@@ -57,13 +47,30 @@ nav ul {
   justify-content: space-between;
 }
 
+nav ul li a:hover {
+  color: black;
+}
+nav li:hover {
+  background-color: white;
+}
 nav li a {
-  font-size: 18px;
   color: white;
+  font-size: 18px;
   text-decoration: none;
   padding: 14px 20px;
 }
 
+/* .fa-sort-down {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.fa-sort-down:hover {
+  color: black;
+} */
 main {
   /* width: 100px; */
   display: flex;
@@ -150,10 +157,10 @@ footer {
   min-height: 200px;
 } */
 .circle-content {
-  /* margin: 10px 50px; */
+  margin: 10px 50px;
   padding: 10px;
   width: 300px;
-  /* float: right; */
+  float: right;
   border-radius: 300px;
   border: 1px solid #333;
   overflow: hidden;
@@ -161,37 +168,38 @@ footer {
   justify-content: center;
   background: linear-gradient(120deg, #c877e0, rgb(133, 112, 211));
   cursor: pointer;
+  /* z-index: 1; */
   /* transform: translateY(200px);
   transition: all 1s ease; */
 }
 
 .hcj-content {
-  z-index: -1;
+  /* z-index: -1; */
   width: 400px;
-  /* margin: 10px; */
+  margin: 10px;
   padding: 10px;
   background: linear-gradient(120deg, #c877e0, #8570d3);
   border-radius: 50px;
   overflow: hidden;
   text-align: center;
   justify-content: center;
-  opacity: 0;
+  /* opacity: 0; */
   position: absolute;
-  top: 100px;
-  right: 100px;
+  bottom: 300px;
+  right: -500px;
   /* transition: all 0.5s ease; */
 }
 
 .appear {
   /* display: block; */
   opacity: 1;
-  transform: translateX(100px) translateY(300px);
+  transform: translateX(-500px) translateY(200px);
   transition: all 1s ease;
 }
 
 .colum {
   flex: 20%;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 /* code for hidden part of the first parargraphe */
